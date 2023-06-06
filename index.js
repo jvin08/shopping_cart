@@ -74,16 +74,16 @@ onValue(shoppingListInDB, function(snapshot){
         shoppingCartEl.innerHTML = "Кошик пустий ще . . ."; 
         let newElement = document.createElement("span");
         newElement.setAttribute("id", "cart-sample")
-        newElement.textContent = "Простий кошик";
-        shoppingCartEl.append(newElement);
+        //newElement.textContent = "Простий кошик";
+        //shoppingCartEl.append(newElement);
         // generating cart sample
-        newElement.addEventListener("click", function(){
-            for (let id = 0; id < cartSample.length; id++) {
-                const element = cartSample[id];
-                push(shoppingListInDB, element);
-            }
-            clearInputFieldEl();
-        })
+//         newElement.addEventListener("click", function(){
+//             for (let id = 0; id < cartSample.length; id++) {
+//                 const element = cartSample[id];
+//                 push(shoppingListInDB, element);
+//             }
+//             clearInputFieldEl();
+//         })
          
     }
     
